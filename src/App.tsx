@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { ArrowUpRight, Mail, MapPin, Github, Linkedin } from 'lucide-react';
 import AvatarBackground from './components/AvatarBackground';
 import gsap from 'gsap';
