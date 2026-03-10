@@ -246,7 +246,7 @@ export default function App() {
         <section id="experience" className="border-b border-zinc-800">
           <div className="p-6 md:p-12">
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-12 gsap-reveal opacity-0">Experience / Hackathons</h2>
-            <div className="flex flex-col gap-8 lg:w-2/3">
+            <div className="flex flex-col gap-8">
               {/* Item */}
               <div className="group grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0 items-center">
                 <div>
