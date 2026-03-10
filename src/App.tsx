@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ArrowUpRight, Mail, MapPin, Github, Linkedin } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Github, Linkedin, Calendar } from 'lucide-react';
 import AvatarBackground from './components/AvatarBackground';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -248,36 +248,30 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-12 gsap-reveal opacity-0">Experience / Hackathons</h2>
             <div className="flex flex-col gap-8 lg:w-2/3">
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
-                <div>
-                  <h4 className="text-xl md:text-2xl font-bold mb-1">Technopreneurship "SAKAY"</h4>
-                  <p className="text-zinc-400">UI/UX Designer (Hipster)</p>
-                </div>
-                <div className="mt-2 md:mt-0 text-left md:text-right">
-                  <p className="font-mono text-sm text-zinc-500">Mar 2025</p>
-                  <p className="font-mono text-xs text-zinc-600 uppercase mt-1">Maramag, Bukidnon</p>
+              <div className="group flex flex-col border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+                <h4 className="text-xl md:text-2xl font-bold mb-1">Technopreneurship "SAKAY"</h4>
+                <p className="text-zinc-400 mb-4">UI/UX Designer (Hipster)</p>
+                <div className="flex flex-col space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={16} /> Mar 2025</p>
+                  <p className="flex items-center gap-2"><MapPin size={16} /> Maramag, Bukidnon</p>
                 </div>
               </div>
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
-                <div>
-                  <h4 className="text-xl md:text-2xl font-bold mb-1">Digi Agri Hackathon</h4>
-                  <p className="text-zinc-400">UI/UX Designer (Hipster)</p>
-                </div>
-                <div className="mt-2 md:mt-0 text-left md:text-right">
-                  <p className="font-mono text-sm text-zinc-500">Apr 2025</p>
-                  <p className="font-mono text-xs text-zinc-600 uppercase mt-1">Cagayan de Oro</p>
+              <div className="group flex flex-col border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+                <h4 className="text-xl md:text-2xl font-bold mb-1">Digi Agri Hackathon</h4>
+                <p className="text-zinc-400 mb-4">UI/UX Designer (Hipster)</p>
+                <div className="flex flex-col space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={16} /> Apr 2025</p>
+                  <p className="flex items-center gap-2"><MapPin size={16} /> Cagayan de Oro</p>
                 </div>
               </div>
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
-                <div>
-                  <h4 className="text-xl md:text-2xl font-bold mb-1">Inter-Campus Tech Comp.</h4>
-                  <p className="text-zinc-400">Web Designer / 2nd Place</p>
-                </div>
-                <div className="mt-2 md:mt-0 text-left md:text-right">
-                  <p className="font-mono text-sm text-zinc-500">Dec 2024</p>
-                  <p className="font-mono text-xs text-zinc-600 uppercase mt-1">Maramag, Bukidnon</p>
+              <div className="group flex flex-col hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+                <h4 className="text-xl md:text-2xl font-bold mb-1">Inter-Campus Tech Comp.</h4>
+                <p className="text-zinc-400 mb-4">Web Designer / 2nd Place</p>
+                <div className="flex flex-col space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={16} /> Dec 2024</p>
+                  <p className="flex items-center gap-2"><MapPin size={16} /> Maramag, Bukidnon</p>
                 </div>
               </div>
             </div>
