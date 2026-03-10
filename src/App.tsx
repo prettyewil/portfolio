@@ -172,18 +172,10 @@ export default function App() {
                 <p className="text-lg md:text-xl text-zinc-400 text-justify font-light mb-8 max-w-2xl">
                   A comprehensive end-to-end digital solution combining farm operations management with weather analytics and an online marketplace. Integrated real-time weather data via OpenWeather API to enable climate-informed decision-making.
                 </p>
-                {/* Abstract UI Placeholder */}
-                <div className="w-full h-48 md:h-64 bg-zinc-950 border border-zinc-800 rounded-lg relative overflow-hidden flex items-center justify-center group-hover:border-zinc-600 transition-colors">
-                  <div className="absolute inset-0 opacity-10 group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-                  <div className="z-10 flex flex-col items-center opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500">
-                    <div className="flex gap-4 mb-4">
-                      <div className="w-16 h-16 bg-zinc-800 rounded-md"></div>
-                      <div className="w-32 h-16 bg-zinc-800 rounded-md"></div>
-                      <div className="w-16 h-16 bg-zinc-800 rounded-md"></div>
-                    </div>
-                    <div className="w-72 h-4 bg-zinc-800 rounded"></div>
-                  </div>
-                </div>
+                {/* Project Image */}
+                <a href="https://anibukid.up.railway.app/" target="_blank" rel="noreferrer" className="w-full h-48 md:h-64 bg-zinc-950 border border-zinc-800 rounded-lg relative overflow-hidden flex items-center justify-center group-hover:border-zinc-600 transition-colors cursor-pointer group/link">
+                  <img src="/farm-ops.png" alt="Farm Operations System" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </a>
               </div>
             </div>
 
@@ -191,42 +183,32 @@ export default function App() {
             <div className="group grid grid-cols-1 lg:grid-cols-12 border-b border-zinc-800 hover:bg-zinc-900 transition-colors duration-300 gsap-reveal opacity-0">
               <div className="lg:col-span-4 p-6 md:p-12 border-b lg:border-b-0 lg:border-r border-zinc-800 flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4 block">02 / UI/UX Design</span>
-                  <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-4">SAKAY Ride-Hailing</h3>
+                  <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4 block">02 / Full-Stack</span>
+                  <h3 className="text-3xl md:text-4xl font-bold leading-tight mb-4">DormSync</h3>
                 </div>
                 <div className="flex gap-2 flex-wrap mt-8">
-                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">Figma</span>
-                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">Prototyping</span>
-                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">Accessibility</span>
+                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">React.js</span>
+                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">Node.js</span>
+                  <span className="px-3 py-1 border border-zinc-700 rounded-full text-xs font-mono">PostgreSQL</span>
                 </div>
               </div>
               <div className="lg:col-span-8 p-6 md:p-12 flex flex-col justify-center">
                 <p className="text-lg md:text-xl text-zinc-400 text-justify font-light mb-8 max-w-2xl">
-                  Lead designer for a ride-hailing application tailored for campus transportation. Focused heavily on user-centered interfaces to ensure maximum usability and accessibility for both student passengers and drivers.
+                  Engineered a web-based system to streamline dormitory operations, including tenant management, room assignment, and secure billing logic.
                 </p>
-                {/* Abstract UI Placeholder */}
-                <div className="w-full h-48 md:h-64 bg-zinc-950 border border-zinc-800 rounded-lg relative overflow-hidden flex items-center justify-center group-hover:border-zinc-600 transition-colors">
-                  <div className="absolute inset-0 opacity-5 group-hover:scale-105 transition-transform duration-700" style={{ background: 'linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000)', backgroundSize: '20px 20px', backgroundPosition: '0 0, 10px 10px' }}></div>
-                  <div className="z-10 flex gap-4 opacity-50 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
-                    <div className="w-20 h-40 border border-zinc-700 rounded-[2rem] p-2 flex flex-col gap-2">
-                      <div className="w-full h-1/2 bg-zinc-800 rounded-2xl"></div>
-                      <div className="w-full h-4 bg-zinc-800 rounded mt-auto"></div>
-                    </div>
-                    <div className="w-20 h-40 border border-zinc-700 rounded-[2rem] p-2 flex flex-col gap-2 mt-4">
-                      <div className="w-full h-full bg-zinc-800 rounded-2xl"></div>
-                    </div>
-                  </div>
-                </div>
+                <a href="https://dormsync-xi.vercel.app/" target="_blank" rel="noreferrer" className="w-full h-48 md:h-64 bg-zinc-950 border border-zinc-800 rounded-lg relative overflow-hidden flex items-center justify-center group-hover:border-zinc-600 transition-colors cursor-pointer">
+                  <img src="/dormsync.png" alt="DormSync" className="w-full h-full object-cover top-0 left-0 opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </a>
               </div>
             </div>
 
             {/* PROJECT 3 & 4 (Grid style) */}
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-6 md:p-12 border-b lg:border-b-0 lg:border-r border-zinc-800 hover:bg-zinc-900 transition-colors flex flex-col h-full gsap-reveal opacity-0">
-                <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4">03 / Full-Stack</span>
-                <h3 className="text-2xl font-bold mb-4">DormSync</h3>
+                <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-4">03 / UI/UX Design</span>
+                <h3 className="text-2xl font-bold mb-4">SAKAY Ride-Hailing</h3>
                 <p className="text-zinc-400 text-justify font-light mb-8 flex-grow">
-                  Engineered a web-based system to streamline dormitory operations, including tenant management, room assignment, and secure billing logic.
+                  Lead designer for a ride-hailing application tailored for campus transportation. Focused heavily on user-centered interfaces to ensure maximum usability and accessibility for both student passengers and drivers.
                 </p>
                 <a href="#" className="flex items-center gap-2 text-sm font-mono hover:text-white text-zinc-500 mt-auto w-max group">
                   View Case Study <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
