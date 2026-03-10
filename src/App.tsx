@@ -248,36 +248,36 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-12 gsap-reveal opacity-0">Experience / Hackathons</h2>
             <div className="flex flex-col gap-8 lg:w-2/3">
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+              <div className="group grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0 items-center">
                 <div>
                   <h4 className="text-xl md:text-2xl font-bold mb-1">Technopreneurship "SAKAY"</h4>
                   <p className="text-zinc-400">UI/UX Designer (Hipster)</p>
                 </div>
-                <div className="mt-4 md:mt-0 flex flex-col items-start md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
-                  <p className="flex items-center gap-2"><Calendar size={16} /> Mar 2025</p>
-                  <p className="flex items-center gap-2"><MapPin size={16} /> Maramag, Bukidnon</p>
+                <div className="flex flex-col md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={14} /> Mar 2025</p>
+                  <p className="flex items-center gap-2"><MapPin size={14} /> Maramag, Bukidnon</p>
                 </div>
               </div>
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+              <div className="group grid grid-cols-1 md:grid-cols-2 gap-4 border-b border-zinc-800 pb-8 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0 items-center">
                 <div>
                   <h4 className="text-xl md:text-2xl font-bold mb-1">Digi Agri Hackathon</h4>
                   <p className="text-zinc-400">UI/UX Designer (Hipster)</p>
                 </div>
-                <div className="mt-4 md:mt-0 flex flex-col items-start md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
-                  <p className="flex items-center gap-2"><Calendar size={16} /> Apr 2025</p>
-                  <p className="flex items-center gap-2"><MapPin size={16} /> Cagayan de Oro</p>
+                <div className="flex flex-col md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={14} /> Apr 2025</p>
+                  <p className="flex items-center gap-2"><MapPin size={14} /> Cagayan de Oro</p>
                 </div>
               </div>
               {/* Item */}
-              <div className="group flex flex-col md:flex-row md:items-start justify-between hover:pl-4 transition-all duration-300 gsap-reveal opacity-0">
+              <div className="group grid grid-cols-1 md:grid-cols-2 gap-4 hover:pl-4 transition-all duration-300 gsap-reveal opacity-0 items-center">
                 <div>
                   <h4 className="text-xl md:text-2xl font-bold mb-1">Inter-Campus Tech Comp.</h4>
                   <p className="text-zinc-400">Web Designer / 2nd Place</p>
                 </div>
-                <div className="mt-4 md:mt-0 flex flex-col items-start md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
-                  <p className="flex items-center gap-2"><Calendar size={16} /> Dec 2024</p>
-                  <p className="flex items-center gap-2"><MapPin size={16} /> Maramag, Bukidnon</p>
+                <div className="flex flex-col md:items-end space-y-2 font-mono text-sm text-zinc-500 uppercase tracking-widest">
+                  <p className="flex items-center gap-2"><Calendar size={14} /> Dec 2024</p>
+                  <p className="flex items-center gap-2"><MapPin size={14} /> Maramag, Bukidnon</p>
                 </div>
               </div>
             </div>
