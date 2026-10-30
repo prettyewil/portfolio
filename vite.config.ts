@@ -46,6 +46,7 @@ export default defineConfig({
       },
     },
   ],
+  assetsInclude: ['**/*.pdf'],
   build: {
     chunkSizeWarningLimit: 1600,
   },
