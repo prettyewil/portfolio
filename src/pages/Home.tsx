@@ -17,6 +17,9 @@ import {
     Cpu,
     Sparkles,
     ShieldCheck,
+    Code2,
+    Wrench,
+    Database,
 } from 'lucide-react';
 import AvatarBackground from '../components/AvatarBackground';
 import gsap from 'gsap';
@@ -93,6 +96,75 @@ const coreCompetences = [
         icon: GraduationCap,
         desc: 'Hands-on versatility across multiple programming paradigms and databases to build tailored solutions for enterprise and consumer platforms.',
         tags: ['PHP', 'Python', 'JavaScript', 'Dart', 'Java', 'SQL', 'VB.NET'],
+    },
+];
+
+const techSkills = [
+    {
+        category: 'Programming Languages',
+        prefix: '01',
+        icon: Code2,
+        desc: 'Core languages used for backend logic, web interactivity, mobile engineering, data manipulation, and database queries.',
+        items: [
+            { name: 'PHP', note: 'Backend' },
+            { name: 'Python', note: 'Scripting' },
+            { name: 'Java', note: 'OOP' },
+            { name: 'JavaScript', note: 'ES6+ / Web' },
+            { name: 'Dart', note: 'Mobile' },
+            { name: 'HTML5 / CSS3', note: 'Structure & Style' },
+            { name: 'SQL', note: 'MySQL / PostgreSQL' },
+            { name: 'VB.NET', note: 'Desktop' },
+        ],
+    },
+    {
+        category: 'Frameworks & Libraries',
+        prefix: '02',
+        icon: Layers,
+        desc: 'Full-stack, frontend, and cross-platform mobile frameworks used to engineer performant, responsive digital experiences.',
+        items: [
+            { name: 'Laravel', note: 'PHP / TALL' },
+            { name: 'React.js', note: 'MERN Frontend' },
+            { name: 'Vue.js', note: 'Reactive UI' },
+            { name: 'Node.js', note: 'Runtime' },
+            { name: 'Flutter', note: 'Cross-Platform' },
+            { name: 'Tailwind CSS', note: 'Styling' },
+            { name: 'Bootstrap', note: 'UI Framework' },
+            { name: 'Alpine.js', note: 'Micro-Interactions' },
+            { name: 'Livewire', note: 'Reactive Full-Stack' },
+            { name: 'Express.js', note: 'REST APIs' },
+        ],
+    },
+    {
+        category: 'Tools & Design Suite',
+        prefix: '03',
+        icon: Wrench,
+        desc: 'Industry-standard design applications, developer environments, and collaboration platforms.',
+        items: [
+            { name: 'Figma (UI/UX)', note: 'Design & Prototyping' },
+            { name: 'VS Code', note: 'Primary Editor' },
+            { name: 'Canva', note: 'Digital Graphics' },
+            { name: 'Adobe Photoshop', note: 'Asset Editing' },
+            { name: 'Navicat Workbench', note: 'Database GUI' },
+            { name: 'Miro', note: 'Journey Mapping' },
+            { name: 'Git & GitHub', note: 'Version Control' },
+            { name: 'Google Workspace', note: 'Productivity' },
+        ],
+    },
+    {
+        category: 'Databases & Cloud Platforms',
+        prefix: '04',
+        icon: Database,
+        desc: 'Relational databases, document stores, automation services, and cloud hosting platforms.',
+        items: [
+            { name: 'PostgreSQL', note: 'Relational DB' },
+            { name: 'MySQL', note: 'Relational DB' },
+            { name: 'Firebase', note: 'BaaS & Auth' },
+            { name: 'MongoDB', note: 'NoSQL DB' },
+            { name: 'Google Apps Script', note: 'Workflow Automation' },
+            { name: 'Google Sites', note: 'Dashboards' },
+            { name: 'Railway', note: 'Cloud Hosting' },
+            { name: 'Vercel', note: 'Deployment' },
+        ],
     },
 ];
 
@@ -203,6 +275,9 @@ export default function Home() {
                     </a>
                     <a href="#about" className="hidden md:block hover:text-zinc-400 transition-colors">
                         About
+                    </a>
+                    <a href="#skills" className="hidden md:block hover:text-zinc-400 transition-colors">
+                        Skills
                     </a>
                     <a href="#experience" className="hidden md:block hover:text-zinc-400 transition-colors">
                         Experience
@@ -533,6 +608,75 @@ export default function Home() {
                                                 >
                                                     {tag}
                                                 </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </section>
+
+                {/* SKILLS & TECHNOLOGIES SECTION */}
+                <section id="skills" className="border-b border-zinc-800">
+                    <div className="p-6 md:p-12">
+                        <div className="mb-12 gsap-reveal opacity-0">
+                            <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest mb-2 block">
+                                Technical Arsenal
+                            </span>
+                            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">
+                                Tools, Frameworks & Languages
+                            </h2>
+                            <p className="text-lg text-zinc-400 font-light mt-3 max-w-2xl">
+                                A comprehensive breakdown of the programming languages, full-stack frameworks, design suites,
+                                and database platforms I use to build scalable digital products.
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            {techSkills.map((category) => {
+                                const IconComponent = category.icon;
+                                return (
+                                    <div
+                                        key={category.category}
+                                        className="group p-6 md:p-8 border border-zinc-800 bg-zinc-950/60 rounded-lg hover:border-zinc-600 transition-all duration-300 flex flex-col justify-between gsap-reveal opacity-0"
+                                    >
+                                        <div>
+                                            <div className="flex items-center justify-between border-b border-zinc-900 pb-5 mb-5">
+                                                <div className="flex items-center gap-4">
+                                                    <div className="w-11 h-11 rounded bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 group-hover:text-white group-hover:border-zinc-600 transition-colors">
+                                                        <IconComponent size={22} />
+                                                    </div>
+                                                    <div>
+                                                        <span className="font-mono text-xs text-zinc-500 uppercase tracking-widest block">
+                                                            {category.prefix} / Stack
+                                                        </span>
+                                                        <h3 className="text-xl md:text-2xl font-bold text-white">
+                                                            {category.category}
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p className="text-zinc-400 text-sm font-light mb-6">
+                                                {category.desc}
+                                            </p>
+                                        </div>
+
+                                        <div className="flex flex-wrap gap-2.5 pt-4 border-t border-zinc-900">
+                                            {category.items.map((item) => (
+                                                <div
+                                                    key={item.name}
+                                                    className="flex items-center gap-2 px-3 py-1.5 border border-zinc-800 bg-zinc-900/60 hover:border-zinc-600 hover:bg-zinc-900 rounded-md transition-all group/item"
+                                                >
+                                                    <span className="font-mono text-xs text-zinc-200 group-hover/item:text-white font-medium">
+                                                        {item.name}
+                                                    </span>
+                                                    {item.note && (
+                                                        <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider px-1.5 py-0.5 bg-black/40 rounded border border-zinc-800/80">
+                                                            {item.note}
+                                                        </span>
+                                                    )}
+                                                </div>
                                             ))}
                                         </div>
                                     </div>
